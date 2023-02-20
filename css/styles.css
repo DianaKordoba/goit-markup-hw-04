@@ -140,7 +140,17 @@ display: block;
 }
 
 .section-general {
+    max-width: 1440px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), 
+        url("../images/peopleoffice.jpg");
     background-color: var(--color-page-text);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     padding: 188px 0;
     text-align: center;
 }
@@ -319,6 +329,64 @@ display: block;
     width: 264px;
 }
 
+.footer-item {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    width: 208px;
+    height: 40px;
+}
+
+.footer-list {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-link-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.customers-section {
+    background-color: var(--color-page);
+    padding-bottom: 130px;
+}
+
+.customers-title {
+    padding-top: 130px;
+    margin-bottom: 72px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.02em;
+    line-height: 1.11;
+}
+
+.customers-list {
+    list-style-type: none;
+    display: flex;
+    gap: 24px;
+}
+
+.customers-item {
+    width: 168px;
+    height: 88px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    background-color: var(--color-page);
+}
+
+.customers-icon {
+    display: flex;
+    object-fit: cover;
+    object-position: center;
+}
+
 /* Portfolio */
 
 .section-main {
@@ -350,8 +418,12 @@ display: block;
 .button-filter:hover,
 .button-filter:focus {
     background-color: var(--color-button-portfolio);
-    color:var(--color-page);
+    color: var(--color-page);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 2px 1px rgba(0, 0, 0, 0.08),
+    0 3px 1px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    border: 0;
 }
 
 .items-app {
@@ -371,6 +443,13 @@ display: block;
 
 .list-app {
     list-style-type: none;
+}
+
+.list-app:hover {
+    box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08),
+        0 1px 1px rgba(46, 47, 66, 0.16),
+        0 1px 6px rgba(46, 47, 66, 0.08);
+    cursor: pointer;
 }
 
 .text-app {
@@ -403,3 +482,5 @@ display: block;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
+
